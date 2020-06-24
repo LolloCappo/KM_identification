@@ -46,7 +46,7 @@ Once the strain is obtained (or already known):
 	fl = 40				# Load frequency [Hz]
 	location = 56, 38, 30, 70	# Location of the strain-gauge on the camera field of view
 
-	E = 75*10**9 			# Young Modulus [Pa]
+	E = 75 * 10**9 			# Young Modulus [Pa]
 	ni = 0.33 			# Poisson's ratio
 	
 	therm_coeff = km.from_strain_gauge(data, fs, fl, E, ni, strain, location)
