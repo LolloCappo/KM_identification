@@ -26,6 +26,7 @@ Here is a simple example on how to use the code:
 	ni = 0.33 			# Poisson's ratio
 	
 If standard material from literature is used:
+
 .. code-block:: python
 
 	s = 'steel'                         # Steel material is chosen
