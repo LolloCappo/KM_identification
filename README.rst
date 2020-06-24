@@ -15,6 +15,30 @@ Here is a simple example on how to use the code:
 	import pyLIA
 	import pysfmov as sfmov
 	import calibration
+	
+Thermoelastic coefficient of standard materials is available as:
+
+.. code-block:: python
+
+	s = 'steel'                         # Steel material is chosen
+	km = calibration.from_material('s') # Thermoelastic coefficient of steel is obtained
+
+If strain gauge calibration is performed and the strain is acquired externally during the experiment:
+
+.. code-block:: python
+	
+	# Uniaxial strain-gauge					
+	eps = np.random.rand(1000)		# Simulated strain from strain-gauge
+	strain = calibration.get_strain(eps)	# Obtain strain
+	
+	# Strain-gauge rosette
+	eps = np.random.rand(1000,3)				# Simulated strain from rosette
+	configuration = '90' 					# Angular configuration of the rosette: {'90', '120'}
+	strain = calibration.get_strain(eps, configuration)	# Obtain strain
+	
+Once the strain is obtained (or already known):
+
+.. code-block:: python
 
 	filename = './data/rec.sfmov'   # Path of the thermal video
 	data = sfmov.get_data(filename) # Load the data
@@ -25,15 +49,7 @@ Here is a simple example on how to use the code:
 	E = 75*10**9 			# Young Modulus [Pa]
 	ni = 0.33 			# Poisson's ratio
 	
-If standard material from literature is used:
-
-.. code-block:: python
-
-	s = 'steel'                         # Steel material is chosen
-	km = calibration.from_material('s') # Thermoelastic coefficient of steel is obtained
-
-If strain :
-
+	km = calibration.from_strain_gauge(data, fs, fl, E, ni, strain, location)
 
 
 Reference:
