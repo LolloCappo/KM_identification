@@ -33,7 +33,7 @@ If strain gauge calibration is performed and the strain is acquired externally d
 	
 	# Strain-gauge rosette
 	eps = np.random.rand(1000,3)				# Simulated strain from rosette
-	configuration = '90' 					# Angular configuration of the rosette: {'90', '120'}
+	configuration = '90' 					# Angular configuration of the rosette
 	strain = calibration.get_strain(eps, configuration)	# Obtain strain
 	
 Once the strain is obtained (or already known):
