@@ -21,7 +21,7 @@ Thermoelastic coefficient of standard materials is available as:
 .. code-block:: python
 
 	s = 'steel'                         # Steel material is chosen
-	km = calibration.from_material('s') # Thermoelastic coefficient of steel is obtained
+	therm_coeff = km.from_material('s') # Thermoelastic coefficient of steel is obtained
 
 If strain gauge calibration is performed and the strain is acquired externally during the experiment:
 
@@ -29,12 +29,12 @@ If strain gauge calibration is performed and the strain is acquired externally d
 	
 	# Uniaxial strain-gauge					
 	eps = np.random.rand(1000)		# Simulated strain from strain-gauge
-	strain = calibration.get_strain(eps)	# Obtain strain
+	strain = km.get_strain(eps)	# Obtain strain
 	
 	# Strain-gauge rosette
 	eps = np.random.rand(1000,3)				# Simulated strain from rosette
 	configuration = '90' 					# Angular configuration of the rosette
-	strain = calibration.get_strain(eps, configuration)	# Obtain strain
+	strain = km.get_strain(eps, configuration)	# Obtain strain
 	
 Once the strain is obtained (or already known):
 
@@ -49,7 +49,7 @@ Once the strain is obtained (or already known):
 	E = 75*10**9 			# Young Modulus [Pa]
 	ni = 0.33 			# Poisson's ratio
 	
-	km = calibration.from_strain_gauge(data, fs, fl, E, ni, strain, location)
+	therm_coeff = km.from_strain_gauge(data, fs, fl, E, ni, strain, location)
 
 
 Reference:
