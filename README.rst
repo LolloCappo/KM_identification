@@ -40,7 +40,7 @@ Once the strain is obtained (or already known):
 
 .. code-block:: python
 
-	filename = './data/rec.sfmov'   # Path of the thermal video
+	filename = './data/rec.sfmov'   # Path to the thermal video
 	data = sfmov.get_data(filename) # Load the data
 	fs = 400			# Sampling frequency [Hz]
 	fl = 40				# Load frequency [Hz]
