@@ -32,7 +32,7 @@ If strain gauge calibration is performed and the strain is acquired externally d
 	strain = km.get_strain(eps)		# Obtain strain
 	
 	# Strain-gauge rosette
-	eps = np.random.rand(1000,3)				# Simulated strain from rosette
+	eps = np.random.rand(1000, 3)				# Simulated strain from rosette
 	configuration = '90' 					# Angular configuration of the rosette
 	strain = km.get_strain(eps, configuration)		# Obtain strain
 	
