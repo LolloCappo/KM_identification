@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import pyLIA
 import pysfmov as sfmov
 
-class calibration():    
+class km():    
     
     '''
     Thermoelastic coefficient definition for calibration of thermal acquisition.
