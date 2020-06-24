@@ -14,7 +14,7 @@ Here is a simple example on how to use the code:
 	import numpy as np
 	import pyLIA
 	import pysfmov as sfmov
-	import calibration
+	import km
 	
 Thermoelastic coefficient of standard materials is available as:
 
