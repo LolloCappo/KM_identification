@@ -21,7 +21,7 @@ Thermoelastic coefficient of standard materials is available as:
 .. code-block:: python
 
 	s = 'steel'                         # Steel material is chosen
-	km = ThermCoeff.from_material(s) # Thermoelastic coefficient of steel is obtained
+	km = ThermCoeff.from_material(s)    # Thermoelastic coefficient of steel is obtained
 	
 The following materials are available: aluminium, epoxy, glass, magnesium, steel, titanium
 
@@ -31,12 +31,12 @@ If strain gauge calibration is performed and the strain is acquired externally d
 	
 	# Uniaxial strain-gauge					
 	eps = np.random.rand(1000)		# Simulated strain from strain-gauge
-	strain = ThermCoeff.get_strain(eps)		# Obtain strain
+	strain = ThermCoeff.get_strain(eps)	# Obtain strain
 	
 	# Strain-gauge rosette
 	eps = np.random.rand(1000, 3)				# Simulated strain from rosette
 	configuration = '90' 					# Angular configuration of the rosette
-	strain = ThermCoeff.get_strain(eps, configuration)		# Obtain strain
+	strain = ThermCoeff.get_strain(eps, configuration)	# Obtain strain
 	
 Once the strain is obtained (or already known):
 
