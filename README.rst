@@ -1,7 +1,4 @@
-ThermCoeff
-----------
-
-Thermoelastic coefficent evaluation
+ThermCoeff - Thermoelastic coefficent evaluation
 ------------------------------------
 
 Thermoelastic coefficent evaluation
