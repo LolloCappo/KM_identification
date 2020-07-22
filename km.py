@@ -2,7 +2,7 @@ import numpy as np
 import pyLIA
 import pysfmov as sfmov
 
-class km():    
+class ThermCoeff():    
     
     '''
     Thermoelastic coefficient definition for calibration of thermal acquisition.
