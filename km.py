@@ -70,7 +70,7 @@ class ThermCoeff():
         
         Input:
         -----
-        m : {'aluminium', 'epoxy', 'glass', 'magnesium', 'steel', titanium'}
+        m : {'aluminium', 'epoxy', 'glass', 'magnesium', 'steel', 'titanium'}
             Standard materials
         
         Return:
