@@ -22,6 +22,8 @@ Thermoelastic coefficient of standard materials is available as:
 
 	s = 'steel'                         # Steel material is chosen
 	therm_coeff = km.from_material('s') # Thermoelastic coefficient of steel is obtained
+	
+The following materials are available: aluminium, epoxy, glass, magnesium, steel, titanium
 
 If strain gauge calibration is performed and the strain is acquired externally during the experiment:
 
