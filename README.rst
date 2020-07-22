@@ -1,7 +1,7 @@
 ThermCoeff - Thermoelastic coefficent evaluation
 ------------------------------------
 
-Thermoelastic coefficent evaluation
+Thermoelastic coefficent evaluation for Thermoelastic Stress Analysis (TSA)
 
 
 Simple examples
