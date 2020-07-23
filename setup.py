@@ -1,4 +1,5 @@
-with open('README.rst', 'r') as f:
+# Read the "README.rst" for project description
+with open('README.rst', 'r', encoding='utf8') as f:
     readme = f.read()
     
 from setuptools import setup, Extension
