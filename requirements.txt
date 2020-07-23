@@ -1,3 +1,2 @@
 numpy>=1.16.5
 pyLIA>=0.6
-pysfmov>=0.2

@@ -1,6 +1,7 @@
+__version__ = '0.1'
+
 import numpy as np
 import pyLIA
-import pysfmov as sfmov
 
 class ThermCoeff():    
     
