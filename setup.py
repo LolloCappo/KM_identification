@@ -16,8 +16,4 @@ if __name__ == '__main__':
         py_modules=['ThermCoeff'],
         long_description=readme,
         install_requires = ['numpy','pyLIA>=0.6']
-        classifiers=['Development Status :: 3 - Alpha',
-                     'Intended Audience :: Developers',
-                     'Programming Language :: Python :: 3.6']
-
     )
