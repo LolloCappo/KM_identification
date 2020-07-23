@@ -11,10 +11,15 @@ Here is a simple example on how to use the code:
 
 .. code-block:: python
 
+	pip install ThermCoeff
+
+Import packages:
+
+.. code-block:: python
+
 	import numpy as np
-	import pyLIA
 	import pysfmov as sfmov
-	from ThermCoeff import *
+	import ThermCoeff
 	
 Thermoelastic coefficient of standard materials is available as:
 
