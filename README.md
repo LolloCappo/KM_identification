@@ -1,4 +1,4 @@
-ThermCoeff - Thermoelastic coefficent evaluation ------------------------------------
+ThermCoeff
 
 Thermoelastic coefficent evaluation for Thermoelastic Stress Analysis (TSA)
 
