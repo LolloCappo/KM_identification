@@ -13,7 +13,7 @@ if __name__ == '__main__':
         author_email='lorenzocapponi@outlook.it',
         description='Module for thermoelastic coefficient identification',
         url='https://github.com/LolloCappo/ThermCoeff',
-        py_modules=['ThermCoeff'],
+        py_modules='ThermCoeff',
         long_description=readme,
         install_requires = ['numpy','pyLIA>=0.6']
     )
