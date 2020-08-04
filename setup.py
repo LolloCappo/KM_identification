@@ -15,5 +15,6 @@ if __name__ == '__main__':
         url='https://github.com/LolloCappo/ThermCoeff',
         py_modules='ThermCoeff',
         long_description=readme,
+        long_description_content_type="text/markdown",
         install_requires = ['numpy','pyLIA>=0.6']
     )
