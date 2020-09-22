@@ -1,5 +1,6 @@
 ThermCoeff - Thermoelastic coefficent evaluation
-	:target: https://zenodo.org/badge/latestdoi/274646267
+.. image:: https://zenodo.org/badge/274646267.svg
+    :target: https://zenodo.org/badge/latestdoi/274646267
 ------------------------------------
 
 Thermoelastic coefficent evaluation for Thermoelastic Stress Analysis (TSA)
